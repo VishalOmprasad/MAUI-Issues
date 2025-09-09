@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+           x:Class="MauiToolkitPopupSample.PopupPage"
+           CanBeDismissedByTappingOutsideOfPopup="False"
+           Size="400, 500">
+
+    <Grid RowDefinitions="0.3*, 0.3*, 0.3*, 0.1*" ColumnDefinitions="*, *">
+        <Image x:Name="image1" Grid.Row="0" Grid.ColumnSpan="2" Source="imageeditordesktop.png"/>
+        <Image x:Name="image2" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Image x:Name="image3" Grid.Row="2" Grid.ColumnSpan="2" />
+
+        <Button Text="Dimension" Clicked="DimensionButtonClicked" Grid.Row="3" Grid.Column="0" />
+
+        <Button Text="Close" Clicked="CloseButtonClicked" Grid.Row="3" Grid.Column="1" />
+        
+    </Grid>
+</mct:Popup>
