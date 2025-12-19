@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BitmapTest.MainPage">
+
+    <Grid RowDefinitions="0.9*,0.1*">
+        <!-- When loading MauiImage directly, use the below code -->
+        <Image x:Name="image"
+               Source="bmpimage2.bmp" />
+        
+        <!-- When loading Embedded image as Stream or Resource, use the below code -->
+        <!--<Image x:Name="image" />-->
+        
+        <Button Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Text="Btye Count"
+                Clicked="OnButtonClicked"/>
+    </Grid>
+
+</ContentPage>
