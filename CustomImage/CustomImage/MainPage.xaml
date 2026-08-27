@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomImage.MainPage">
+
+    <Grid RowDefinitions="0.8*,0.2*">
+        <Image x:Name="image"
+               Source="imagethree.png" />
+        <!-- Source="imageone.jpg" /> -->
+        <!-- Source="imagetwo.png" /> -->
+        <!-- Source="imagethree.png" /> -->
+        <HorizontalStackLayout Grid.Row="1">
+            <Button HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Text="Rotate"
+                    Clicked="OnRotateButtonClicked" />
+            <Button HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+        </HorizontalStackLayout>
+    </Grid>
+
+</ContentPage>
